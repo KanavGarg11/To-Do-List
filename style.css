@@ -1,0 +1,394 @@
+body
+{
+    padding : 0px ;
+    margin : 0px ;
+    border : 0px ;
+}
+
+/*----------------------------------------*/
+
+.navbar
+{
+    height : 70px ;
+    background : rgb(145, 200, 228) ;
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+    color : rgb(255, 251, 222) ;
+    font-size : 35px ;
+    font-weight : bold ;
+}
+
+/*----------------------------------------*/
+
+.main
+{
+    margin-left : 25% ;
+    margin-right : 25% ;
+    margin-top : 55px ;
+    background : rgb(255, 251, 222) ;
+    min-height : 550px ;
+
+    display : flex ;
+    flex-direction : column ;
+}
+
+.main_heading {
+    display: grid;
+    grid-template-columns: 70px 110px 1fr 170px;
+    gap: 10px;
+
+    border : 3.5px solid rgb(70, 130, 169) ;
+    height : 60px ;
+}
+
+.header
+{
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+
+    font-weight : bold ;
+    font-size : 18px ;
+    color : rgb(18, 47, 67) ; 
+}
+
+/*----------------------------------------*/
+
+.options_bar
+{
+    display : flex ;
+    align-items : center ;
+    justify-content : flex-start ;
+
+    border : 3.5px solid rgb(70, 130, 169) ;
+    border-top : 0px ;
+}
+
+.add_button
+{
+    height : 30px ;
+    margin-top : 5px ;
+    margin-bottom : 5px ;
+    margin-left : 50px ;
+
+    padding : 10px ;
+
+    border-radius : 5px ;
+    
+    background : rgb(252, 242, 172) ;
+    border : 0px ;
+
+    font-weight : bold ;
+    font-size : 16px ;
+
+    display : flex ;
+    align-items : center ;
+    justify-content : space-between ;
+
+    gap : 15px ;
+}
+
+.add_button:hover
+{
+    background : rgb(252, 238, 135) ;
+    font-size : 18px ;
+    border : 1px solid blue ;
+}
+
+/*----------------------------------------*/
+
+.task_section
+{
+    min-height : 360px ;
+    padding-top : 30px ;
+
+    display : flex ;
+    flex-direction : column ;
+
+    position : relative ;
+}
+
+.task
+{
+    border-top : 1px solid black ;
+    border-bottom : 1px solid black ;
+    height : 50px ;
+
+    display: grid;
+    grid-template-columns: 70px 110px 1fr 170px;
+    gap: 10px;
+
+    margin-bottom : 2.5px ;
+    margin-top : 2.5px ;
+
+    background : rgb(255, 249, 203) ;
+}
+
+.mover
+{
+    background-image : url("https://static.thenounproject.com/png/4659785-200.png") ;
+    height : 48px ;
+    width : 48px ;
+    background-size : cover ;
+}
+
+.mover:hover
+{
+    background-image : url("https://icons.veryicon.com/png/o/miscellaneous/template-3/menu-59.png") ;
+}
+
+.date
+{
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+    font-weight : bold ;
+    font-size : 20px ;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.task_name
+{
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+    font-weight : bold ;
+    font-size : 18px ;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+/*----------------------------------------*/
+.options
+{
+    display : flex ;
+    align-items : center ;
+    justify-content : space-between ;
+}
+
+.option
+{
+    position : relative ;
+    cursor : pointer ;
+}
+
+
+.tick
+{
+    height : 27px ;
+    width : 27px ;
+}
+
+.delete_button
+{
+    background-image : url("https://icons.veryicon.com/png/o/miscellaneous/mahealth-pro/delete-295.png") ;
+    height : 40px ;
+    width : 40px ;
+    background-size : cover ;
+
+}
+
+.delete_button:hover
+{
+    height : 45px ;
+    width : 45px ;
+}
+
+.star_button
+{
+    background-image : url("https://www.iconpacks.net/icons/1/free-star-icon-984-thumb.png") ;
+    height : 40px ;
+    width : 40px ;
+    background-size : cover ;
+}
+
+.star_button:hover
+{
+    height : 43px ;
+    width : 43px ;
+}
+
+.popup
+{
+
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+
+    font-weight : bold ;
+    color : rgb(47, 91, 121) ;
+
+    position  : absolute ;
+    bottom : 39px ;
+    left : 22px ;
+    height : 30px ;
+    width : 100px ;
+
+    background : rgb(180, 240, 255) ;
+    border : 2px solid rgb(70, 130, 169) ;
+    border-radius : 5px ;
+
+    opacity : 0 ;
+    transition : all 0.3s ease-in-out ;
+
+    pointer-events: none;
+}
+
+.option:hover .popup 
+{
+    opacity : 100% ;
+}
+
+
+/*----------------------------------------*/
+
+
+.create_task
+{
+    position : fixed ;
+    left : 50% ;
+    transform : translateX(-50%) translateY(-50%) ;
+    top : 50% ;
+    z-index : 20 ;
+
+    height : 500px ;
+    width : 650px ;
+    background : rgb(226, 245, 255) ;
+    border : 4px solid rgb(46, 94, 126) ;
+
+    display : flex ;
+    flex-direction : column ;
+    justify-content : space-between ;
+
+    visibility : hidden ;
+}
+
+.bg_blurr
+{
+    z-index : 15 ;
+    position : fixed ;
+    top : 0px ;
+    left : 0px ;
+    height : 100% ;
+    width : 100% ;
+    background : rgba(0, 0, 0, 0.407) ;
+
+    visibility : hidden ;
+}
+
+.create_heading
+{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    border-bottom : 4px solid rgb(46, 94, 126) ;
+    height : 60px ;
+    font-weight : bold ;
+    font-size : 30px ;
+    color : rgb(36, 78, 105) ;
+}
+
+label[for="task_input"]
+{
+    font-weight: bold;
+    font-size : 25px ;
+    color: rgb(27, 57, 75) ;
+    margin-left : 10px ;
+}
+
+#task_input
+{
+    height : 200px ;
+    border-top : 2px solid black ;
+    border-bottom : 2px solid black ;
+    background : rgb(244, 251, 255) ;
+
+    padding-left : 40px ;
+    font-weight : bold ;
+    font-size : 23px ;
+}
+
+#task_input::placeholder
+{
+    position : absolute ;
+    left : 50% ;
+    transform : translateX(-50%) ;
+    font-weight : bold ;
+    font-size : 22px ;
+    font-family :Verdana, Geneva, Tahoma, sans-serif
+}
+
+.create_task_bottom_bar
+{
+    height : 50px ;
+    background : pink ;
+    display : flex ;
+    align-items : center ;
+    justify-content : space-evenly ;
+    gap : 50px ;
+    padding-right : 30px ;
+}
+
+.create_task_button
+{
+    background : rgb(255, 251, 222) ;
+    border-radius : 5px ;
+    font-weight : bold;
+    font-size : 18px ;
+    padding : 6px 12px 6px 12px ;
+}
+
+.create_button
+{
+    background: linear-gradient(to right , rgb(255, 196, 250) , rgb(180, 98, 251) , rgb(239, 169, 238)) ;
+    color : white ;
+    font-size : 19px ;
+}
+
+/*----------------------------------------*/
+
+.finished_task_section
+{
+    border-top : 3.5px solid rgb(70, 130, 169) ;
+    min-height : 90px ;
+    width : 100% ;
+}
+
+.finished_heading
+{
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+    border-bottom : 3.5px solid rgb(70, 130, 169) ;
+    font-weight : bold ;
+    font-size : 18px ;
+    height : 40px ;
+    color : rgb(18, 47, 67) ;
+}
+
+
+/*----------------------------------------*/
+
+.deleted_task_class_list
+{
+    background-image: linear-gradient(to bottom, rgb(187, 181, 140) 48%, black 50%, black 52%, rgb(187, 181, 140) 54%);
+    background-size: 100% 100%;
+}
+
+.task.dragging {
+    opacity: 0.4;
+    border: 2px dashed rgb(70, 130, 169);
+    background: rgb(226, 245, 255);
+}
+
+/*----------------------------------------*/
+
+.star_separater
+{
+    margin-bottom : 2.5px ;
+    margin-top : 2.5px ;
+}
+
+/*----------------------------------------*/
