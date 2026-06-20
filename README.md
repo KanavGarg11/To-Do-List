@@ -73,15 +73,11 @@ A modern and interactive **To-Do List Manager** built using **HTML, CSS, and Van
 
 ## 📸 Screenshots
 
-Add screenshots of your application here.
+![Task Management](images/preview_image_1.png)
 
-```md
-![Home Screen](screenshots/home.png)
+![Create Task Panel](images/preview_image_2.png)
 
-![Create Task](screenshots/create-task.png)
-
-![Finished Tasks](screenshots/finished-tasks.png)
-```
+![Completed Tasks Section](images/preview_image_3.png)
 
 ---
 
