@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    
+    <div class = "navbar">
+        To-Do List
+    </div>
+
+    <div class = "main">
+
+        <div class = "main_heading">
+            <div class = "header"></div>
+            <div  class = "header">Date Created</div>
+            <div class = "header">Pending Tasks</div>
+            <div class = "header">Options</div>
+        </div>
+
+        <div class = "options_bar">
+
+            <button class = "add_button">
+                <img src = "images/add_image.png" height = "25px" width = "25px" border-radius = "100%">
+                Add Task
+            </button>
+
+        </div>
+
+        <div class="task_section">
+
+
+            <div class = "star_separater">
+
+            </div>
+
+
+            <div class="task unstarred" id = "task_1">
+        
+                <div class="mover option">
+                    <div class = "mover_popup popup">
+                            Re-order
+                    </div>
+                </div>
+
+                <div class="date" id = "date_1">
+                    24/02/26
+                </div>
+        
+                <div class="task_name" id = "task_name_1">
+                    Clean The Garden 2x then move it
+                </div>
+        
+                <div class="options">
+        
+                    <div class="tick_box option">
+
+                        <div class="tick_box_popup popup">
+                            Mark Completed
+                        </div>
+                    
+                        <label for="tick_1">
+                        </label>
+                        <input type="checkbox" id="tick_1" class = "tick" placeholder="">
+
+                    </div>
+        
+                    <div class="delete_button option">
+                        <div class = "delete_popup popup">
+                            Delete Task
+                        </div>
+                    </div>
+        
+                    <div class="star_button option">
+
+                        <div class = "star_popup popup">
+                            Star The Task
+                        </div>
+                        
+                    </div>
+        
+                </div>
+        
+            </div>
+
+           
+
+        </div>
+        
+        <div class = "finished_task_section">
+            <div class = "finished_heading">
+                Finished Tasks
+            </div>
+            <div class = "finished_tasks">
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class = "bg_blurr">
+
+    </div>
+
+    <div class = "create_task">
+        
+        <div class = "create_heading">
+            Create New Task
+        </div>
+
+        <label for = "task_input">Enter Task :</label>
+        <input type = "text" id = "task_input" placeholder = "Enter What You Want To Add">
+
+        <div class = "create_task_bottom_bar">
+            <button class = "cancel_button create_task_button">Cancel</button>
+            <button class = "create_button create_task_button">Create Task</button>
+        </div>
+
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
