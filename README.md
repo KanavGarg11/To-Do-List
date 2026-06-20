@@ -157,3 +157,7 @@ cd todo-list
 No additional setup required.
 
 ---
+
+## 👨‍💻 Author
+
+**Kanav Garg**
